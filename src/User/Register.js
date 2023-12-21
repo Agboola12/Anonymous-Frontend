@@ -11,7 +11,7 @@ const Register = () => {
     password:""
   })
 
-  const inputChange =()=>{
+  const inputChange =(e)=>{
     const name = e.target.name
     const value = e.target.value
     setUser({...user, [name]:value})
