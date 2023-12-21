@@ -48,7 +48,8 @@ return (
           </div>
           <div className='mt-12 text-center'>
             <button type='submit' className='bg-gradient-to-r from-secondary to-primary w-60 h-14 text-white font-bold py-2 px-4 rounded text-center'>
-               Register</button><br/>
+            {isLoading ? "Saving post..." : "Register"}
+               </button><br/>
                <Link to="/login" className={style.login}>Already an account? Login</Link><br/><br/>
                <small className='text-light'>By using this service, you agree to our Privacy Policy, Terms of Service and any related policies. (Check Disclaimer)</small>
           </div>
