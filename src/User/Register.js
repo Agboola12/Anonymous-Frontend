@@ -27,7 +27,10 @@ const Register = () => {
                 <span className={style.bar}></span>
             </div>
             <div className='mt-12 text-center'>
-              <button className='bg-gradient-to-r from-secondary to-primary w-60 h-14 text-white font-bold py-2 px-4 rounded text-center'> Register</button>
+              <button className='bg-gradient-to-r from-secondary to-primary w-60 h-14 text-white font-bold py-2 px-4 rounded text-center'>
+                 Register</button><br/>
+                 <router-link to="/login">Already an account? Login</router-link><br/>
+                 <small className='text-light'>By using this service, you agree to our Privacy Policy, Terms of Service and any related policies. (Check Disclaimer)</small>
             </div>
           </form>
         </div>
