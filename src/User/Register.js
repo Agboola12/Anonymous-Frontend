@@ -1,9 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from './logo.png'
 import style from '../style/register.module.css'
 import { Link } from 'react-router-dom'
 
 const Register = () => {
+
+  const [user, setUser]=useState({
+    username:"",
+    email:"",
+    password:""
+  })
+
+  const inputChange =()=>{
+    const name = e.target.name
+    const value = e.target.value
+    setUser({...user, [name]:value})
+
+  }  
+
+  const handleSubmit =()=>{
+
+  }
+
 return (
   <div className=' py-5 h-auto w-full bg-gradient-to-r from-secondary to-primary'>
     <div className="w-[35%] py-4 mx-auto  bg-primary h-screen text-white rounded-2xl overflow-hidden shadow-lg">
