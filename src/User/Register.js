@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const Register = () => {
   return (
     <div className=' py-5 h-auto w-full bg-gradient-to-r from-secondary to-primary'>
-      <div className="w-[40%] py-4 mx-auto  bg-primary h-screen text-white rounded-2xl overflow-hidden shadow-lg">
+      <div className="w-[35%] py-4 mx-auto  bg-primary h-screen text-white rounded-2xl overflow-hidden shadow-lg">
         <div className='mt-5'>
           <img className="rounded  mx-auto w-28" src={logo} alt="Card image" />
         </div>
@@ -30,7 +30,7 @@ const Register = () => {
             <div className='mt-12 text-center'>
               <button className='bg-gradient-to-r from-secondary to-primary w-60 h-14 text-white font-bold py-2 px-4 rounded text-center'>
                  Register</button><br/>
-                 <Link to="/login">Already an account? Login</Link><br/>
+                 <Link to="/login" className={style.login}>Already an account? Login</Link><br/>
                  <small className='text-light'>By using this service, you agree to our Privacy Policy, Terms of Service and any related policies. (Check Disclaimer)</small>
             </div>
           </form>
