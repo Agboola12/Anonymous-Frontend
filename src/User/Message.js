@@ -6,7 +6,7 @@ const Message = () => {
     <div className=' py-5 h-[100vh] w-full bg-gradient-to-r from-secondary to-primary'>
       <div className="w-[35%] py-4 mx-auto  bg-primary h-[90vh] text-white rounded-2xl overflow-hidden shadow-lg">
         <div className="px-6 py-4">
-            <h1 className='text-center font-extrabold '>Say Something...</h1>
+            <h1 className={style.say}>Say Something...</h1>
           <form>
             <div id={style.group}>
               <textarea required="" type="text" placeholder='Leave a message here ' className={style.input} />
