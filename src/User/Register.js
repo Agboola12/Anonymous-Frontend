@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from './logo.png'
 import style from '../style/register.module.css'
+import { Link } from 'react-router-dom'
 
 const Register = () => {
   return (
@@ -29,7 +30,7 @@ const Register = () => {
             <div className='mt-12 text-center'>
               <button className='bg-gradient-to-r from-secondary to-primary w-60 h-14 text-white font-bold py-2 px-4 rounded text-center'>
                  Register</button><br/>
-                 <router-link to="/login">Already an account? Login</router-link><br/>
+                 <Link to="/login">Already an account? Login</Link><br/>
                  <small className='text-light'>By using this service, you agree to our Privacy Policy, Terms of Service and any related policies. (Check Disclaimer)</small>
             </div>
           </form>
