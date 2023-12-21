@@ -4,7 +4,7 @@ import style from '../style/register.module.css'
 import { Link } from 'react-router-dom'
 
 const Register = () => {
-
+  const [isLoading, setIsLoading] = useState(false)
   const [user, setUser]=useState({
     username:"",
     email:"",
