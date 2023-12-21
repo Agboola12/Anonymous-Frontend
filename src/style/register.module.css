@@ -1,4 +1,4 @@
-.group {
+#group {
     position: relative;
    }
    
@@ -6,9 +6,9 @@
     font-size: 16px;
     padding: 10px 10px 10px 5px;
     display: block;
-    width: 200px;
+    width: 100%;
     border: none;
-    border-bottom: 1px solid #515151;
+    border-bottom: 1px solid #C6B3D9;
     background: transparent;
    }
    
@@ -16,7 +16,7 @@
     outline: none;
    }
    
-   .label {
+   /* .label {
     color: #999;
     font-size: 18px;
     font-weight: normal;
@@ -27,7 +27,7 @@
     transition: 0.2s ease all;
     -moz-transition: 0.2s ease all;
     -webkit-transition: 0.2s ease all;
-   }
+   } */
    
    .input:focus ~ label, .input:valid ~ label {
     top: -20px;
@@ -38,7 +38,7 @@
    .bar {
     position: relative;
     display: block;
-    width: 200px;
+    width: 100%;
    }
    
    .bar:before, .bar:after {
