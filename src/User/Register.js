@@ -5,7 +5,7 @@ import style from '../style/register.module.css'
 const Register = () => {
   return (
     <div className=' py-5 h-auto w-full bg-gradient-to-r from-secondary to-primary'>
-      <div className="w-[40%] py-4 mx-auto  bg-primary h-screen text-white rounded overflow-hidden shadow-lg">
+      <div className="w-[40%] py-4 mx-auto  bg-primary h-screen text-white rounded-2xl overflow-hidden shadow-lg">
         <div className='mt-5'>
           <img className="rounded  mx-auto w-28" src={logo} alt="Card image" />
         </div>
