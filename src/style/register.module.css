@@ -16,9 +16,11 @@
     border: none;
     border-bottom: 1px solid #C6B3D9;
     background: transparent;
-    margin-top: 5em;
-    height: 30vh;
+    /* margin-top: 5em;
+    height: 30vh; */
    }
+
+   
    
    .input:focus {
     outline: none;

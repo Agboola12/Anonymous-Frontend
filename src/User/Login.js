@@ -8,7 +8,7 @@ const Login = () => {
     <div className=' py-5 h-[100vh] w-full bg-gradient-to-r from-secondary to-primary'>
       <div className="w-[35%] py-4 mx-auto  bg-primary h-[90vh] text-white rounded-2xl overflow-hidden shadow-lg">
         <div className='mt-5'>
-          <img className="rounded  mx-auto w-28" src={logo} alt="Card image" />
+          <img className="rounded  mx-auto w-28" src={logo} alt="loko" />
         </div>
         <div className="px-6 py-4">
         <h1 className={style.head}>Login</h1>

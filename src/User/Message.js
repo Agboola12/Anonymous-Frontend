@@ -8,7 +8,7 @@ const Message = () => {
         <div className="px-6 py-4">
             <h1 className={style.say}>Say Something...</h1>
           <form>
-            <div id={style.group}>
+            <div id={style.group} className='mt-14'>
               <textarea required="" type="text" placeholder='Leave a message here ' className={style.input} />
               <span className={style.highlight}></span>
               <span className={style.bar}></span>
