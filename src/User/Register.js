@@ -11,8 +11,9 @@ const Register = () => {
           <img className="rounded  mx-auto w-28" src={logo} alt="Card image" />
         </div>
         <div className="px-6 py-4">
+          <h1 className={style.head}>Register</h1>
           <form>
-            <div id={style.group} className='mt-[3em]'>
+            <div id={style.group} className='mt-[1em]'>
               <input required="" type="text" placeholder='Enter Your Username' className={style.input}/>
                 <span className={style.highlight}></span>
                 <span className={style.bar}></span>
@@ -30,7 +31,7 @@ const Register = () => {
             <div className='mt-12 text-center'>
               <button className='bg-gradient-to-r from-secondary to-primary w-60 h-14 text-white font-bold py-2 px-4 rounded text-center'>
                  Register</button><br/>
-                 <Link to="/login" className={style.login}>Already an account? Login</Link><br/>
+                 <Link to="/login" className={style.login}>Already an account? Login</Link><br/><br/>
                  <small className='text-light'>By using this service, you agree to our Privacy Policy, Terms of Service and any related policies. (Check Disclaimer)</small>
             </div>
           </form>
