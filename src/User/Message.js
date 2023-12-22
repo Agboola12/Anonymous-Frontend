@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import logo from './logo.png'
 import { useNavigate } from 'react-router';
+import BaseUrl from '../BaseUrl';
 
 
 const Message = () => {
@@ -11,11 +12,11 @@ const Message = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const data = {
-      email: email.current.value,
+      message: message.current.value,
     };
     setIsLoading(true);
     axios
-      .post(BaseUrl + 'login', data)
+      .post(BaseUrl + 'message', data)
       .then((res) => {
         if (res.data.success) {
           navigate('/user-register');
