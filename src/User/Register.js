@@ -34,7 +34,7 @@ const Register = () => {
       .catch((err) => {
         console.log(err);
       }).finally(() => {
-        isLoading(false);
+        setIsLoading(false);
       })
 
   }
@@ -49,11 +49,7 @@ const Register = () => {
           <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-center text-white'>
             Register
           </h1>
-          <form
-            method='post'
-            action=''
-            encType='multipart/form-data'
-            onSubmit={handleSubmit}
+          <div
           >
             <div className='flex flex-col mt-9'>
               <div className='relative mb-4'>
@@ -107,8 +103,8 @@ const Register = () => {
             </div>
             <div className='mt-8 text-center'>
               <button
-                type='submit'
                 disabled={isLoading}
+              onClick={handleSubmit}
                 className='bg-gradient-to-r from-secondary to-primary w-full sm:w-2/3 md:w-1/2 lg:w-3/4 xl:w-1/3 h-14 text-white font-bold py-2 px-4 rounded text-center'
               >
                 <b>{isLoading ? 'Signing Up...' : 'Register'}</b>
@@ -127,7 +123,7 @@ const Register = () => {
                 of Service and any related policies. (Check Disclaimer)
               </small>
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
