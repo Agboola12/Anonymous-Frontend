@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import logo from './logo.png'
-import style from '../style/register.module.css'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import BaseUrl from '../BaseUrl'
