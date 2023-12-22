@@ -47,13 +47,19 @@ const Register = () => {
           <img className="rounded  mx-auto w-28" src={logo} alt="wow" />
         </div>
         <div className="px-6 py-4">
-          <h1 className={style.head}>Register</h1>
+          {/* <h1 className={style.head}>Register</h1> */}
+          <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-center text-white">
+          Register
+          </h1>
+
           <form method="post" action="" onSubmit={handleSubmit}>
-            <div id={style.group} className='mt-[1em]'>
-              <input required type="text" placeholder='Enter Your Username' className={style.input} name='username' value={user.username} onChange={inputChange} />
-              <span className={style.highlight}></span>
+            <div className='mt-[1em] relative sm:relative md:relative lg:relative'>
+              <input required type="text" placeholder='Enter Your Username' 
+                className="text-base sm:text-lg md:text-xl lg:text-2xl px-2 py-2 sm:px-4 sm:py-2 md:py-3 lg:py-4 w-full border-b border-purple-300 bg-transparent focus:outline-none" name='username' value={user.username} onChange={inputChange} />
+              <span className="absolute h-3/5 w-12 bg-purple-500 top-1/4 left-0 opacity-50 pointer-events-none"></span>
               <span className={style.bar}></span>
             </div>
+
             <div id={style.group} className='mt-[2em]'>
               <input required="" type="email" placeholder='Enter Your email' className={style.input} name='email' value={user.email} onChange={inputChange} />
               <span className={style.highlight}></span>
@@ -69,7 +75,7 @@ const Register = () => {
                 {isLoading ? "Saving post..." : "Register"}
               </button><br />
 
-              <Link to="/login" className={style.login}>Already an account? Login</Link><br /><br />
+              <Link to="/login" className='text-lightgrey hover:text-blue-500'>Already an account? Login</Link><br /><br />
               <small className='text-light'>By using this service, you agree to our Privacy Policy, Terms of Service and any related policies. (Check Disclaimer)</small>
             </div>
           </form>
