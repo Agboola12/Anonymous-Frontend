@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
-import logo from './logo.png'
 import { useNavigate } from 'react-router';
 import BaseUrl from '../BaseUrl';
+import axios from 'axios';
 
 
 const Message = () => {
@@ -32,10 +32,7 @@ const Message = () => {
 
   return (
     <div className='h-screen py-5 w-full bg-gradient-to-r from-secondary to-primary'>
-      <div className='w-full sm:w-2/3 md:w-1/1 lg:w-1/3 xl:w-1/3 mx-auto bg-primary text-white rounded-2xl overflow-hidden shadow-lg'>
-        <div className='mt-5'>
-          <img className='rounded mx-auto w-28' src={logo} alt='logo' />
-        </div>
+      <div className='w-full h-[90vh] sm:w-2/3 md:w-1/1 lg:w-1/3 xl:w-1/3 mx-auto bg-primary text-white rounded-2xl overflow-hidden shadow-lg'>
         <div className='px-6 py-4'>
           <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-center text-white'>
           Say Something...
@@ -46,7 +43,7 @@ const Message = () => {
             encType='multipart/form-data'
             onSubmit={handleSubmit}
           >
-            <div className='flex flex-col mt-9'>
+            <div className='flex flex-col mt-[10vh]'>
               <div className='relative mb-4'>
                 <textarea
                   id='message'
@@ -54,7 +51,7 @@ const Message = () => {
                   type='message'
                   required
                   ref={message}
-                  className='w-full border-b border-primary-300 py-1 focus:border-b-2 focus:border-primary-700 transition-colors focus:outline-none peer bg-inherit'
+                  className='w-full h-[30vh] border-b border-primary-300 py-1 focus:border-b-2 focus:border-primary-700 transition-colors focus:outline-none peer bg-inherit'
                 />
                 <label
                   htmlFor='message'
@@ -73,7 +70,7 @@ const Message = () => {
               >
                 <b>{isLoading ? 'Sending...' : 'Send Message'}</b>
               </button>
-              <br />
+              <br /><br/><br/>
               <small className='text-light'>
                 By using this service, you agree to our Privacy Policy, Terms
                 of Service and any related policies. (Check Disclaimer)
